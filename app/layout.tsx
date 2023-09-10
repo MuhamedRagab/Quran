@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="ar" data-theme="dark">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
