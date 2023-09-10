@@ -1,0 +1,26 @@
+{
+  "name": "Next.js App",
+  "short_name": "Next.js App",
+  "description": "Next.js App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/quran-32.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "/quran-64.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "/quran-192.jpg",
+      "sizes": "any",
+      "type": "image/jpeg"
+    }
+  ]
+}
