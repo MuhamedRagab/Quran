@@ -114,9 +114,11 @@ export default function Surah() {
 
   return (
     <div className="container p-4" dir="rtl">
-      <h3>رقم السوره: {surah.number}</h3>
-      <h3>عدد الايات: {surah.numberOfAyahs}</h3>
-      <h3>نوع الوحي: {surah.revelationType}</h3>
+      <div className="p-2">
+        <h3>رقم السوره: {surah.number}</h3>
+        <h3>عدد الايات: {surah.numberOfAyahs}</h3>
+        <h3>نوع الوحي: {surah.revelationType}</h3>
+      </div>
 
       <div className="flex items-center gap-8 justify-center sticky top-0 bg-[#1d232a] z-20">
         <button className="text-3xl" onClick={surahPlayPauseHandler}>
