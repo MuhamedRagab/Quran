@@ -62,14 +62,15 @@ export default function Ayah({
     >
       <button
         className={twMerge(
-          `hover:bg-amber-100 hover:text-black cursor-pointer rounded duration-200 py-2 px-1 ${
+          `hover:bg-amber-100 hover:text-black cursor-pointer rounded duration-200 pb-4 px-1 ${
             ayahNumberPlaying === numberInSurah ? "text-black bg-amber-100" : ""
           }`,
           "inline-block"
         )}
         onClick={() => verseAudioURL(parseInt(surahId), numberInSurah)}
       >
-        {text} <VerseSymbol numberInSurah={numberInSurah} />
+        {text}
+        <VerseSymbol numberInSurah={numberInSurah} />
       </button>
     </li>
   );
