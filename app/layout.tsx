@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Amiri_Quran } from "next/font/google";
 import Navbar from "./components/layout/Navbar";
 import ScrollYProgress from "./components/layout/ScrollYProgress";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const amiri_quran = Amiri_Quran({
   subsets: ["latin"],
@@ -38,9 +40,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" data-theme="dark">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body className={amiri_quran.className}>
         <ScrollYProgress />
         <Navbar />

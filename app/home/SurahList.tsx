@@ -1,26 +1,41 @@
-import React from "react";
 import { ISurahListProps } from "../page";
 import Link from "next/link";
+import Aos from "aos";
+import { useEffect } from "react";
 
 export default function SurahList({ surah }: { surah: ISurahListProps[] }) {
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+      once: true,
+    });
+  }, []);
+
   return (
-    <ul className="flex flex-wrap gap-4 justify-center w-full" dir="rtl">
-      {surah.map(({ id, arabic, aya, name, place }) => (
-        <li
-          key={id}
-          className="flex flex-col p-3 rounded text-center border border-slate-700 w-36 hover:bg-slate-700 hover:text-white transition duration-200"
-        >
-          <Link
-            href={`/surah/${id}`}
-            className="link link-secondary transition decoration-transparent mb-2 text-xl"
-          >
-            {arabic}
-          </Link>
-          <small>English: {name}</small>
-          <small>Place: {place}</small>
-          <small>{aya} Ayahs</small>
-        </li>
-      ))}
+    <ul
+      className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-full place-items-center"
+      dir="rtl"
+    >
+      {surah.length > 0 &&
+        surah.map(
+          ({ name, number, numberOfAyahs, englishName, revelationType }) => (
+            <li
+              data-aos="zoom-in"
+              key={number}
+              className="flex flex-col p-3 rounded text-center border border-slate-700 w-36 hover:bg-slate-700 hover:text-white transition duration-200"
+            >
+              <Link
+                href={`/surah/${number}`}
+                className="link link-secondary transition decoration-transparent mb-2 text-xl"
+              >
+                {name}
+              </Link>
+              <small>English: {englishName}</small>
+              <small>Place: {revelationType}</small>
+              <small>{numberOfAyahs} Ayahs</small>
+            </li>
+          )
+        )}
     </ul>
   );
 }
