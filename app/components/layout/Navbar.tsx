@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-import logo from "@/app/assets/images/logo.png";
+import logo from "@/app/assets/images/logo.jpg";
 
 export default function Navbar() {
   return (
@@ -12,7 +12,7 @@ export default function Navbar() {
           <Image
             src={logo}
             alt="logo"
-            className="rounded-lg object-contain object-center w-16 cursor-pointer"
+            className="rounded-lg object-contain object-center w-12 h-12 cursor-pointer"
           />
         </Link>
       </div>
