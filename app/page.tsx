@@ -37,10 +37,10 @@ export default function Home() {
     <main
       className={twMerge(
         "prose flex flex-col items-center mx-auto p-2 sm:p-4",
-        "max-w-screen-lg"
+        "max-w-full"
       )}
     >
-      <section className="container flex flex-col items-center justify-center">
+      <section className="flex flex-col items-center justify-center">
         <div className="flex items-center gap-6">
           <SearchSurah setSurah={setSurah} />
         </div>

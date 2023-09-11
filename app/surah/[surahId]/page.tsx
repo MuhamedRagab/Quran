@@ -125,15 +125,14 @@ export default function Surah() {
         <h3>نوع الوحي: {surah.revelationType}</h3>
       </div>
 
-      <div className="flex items-center gap-8 justify-center sticky top-0 bg-[#1d232a] z-20">
-        <button className="text-3xl" onClick={surahPlayPauseHandler}>
-          {isAudioPlaying ? (
-            <FaPause className="text-2xl cursor-pointer" />
-          ) : (
-            <FaPlay className="text-2xl cursor-pointer" />
-          )}
+      <div className="flex items-baseline justify-center gap-4 sticky top-0 bg-[#1d232a] z-20 p-2 mb-10">
+        <button
+          className="text-xl cursor-pointer"
+          onClick={surahPlayPauseHandler}
+        >
+          {isAudioPlaying ? <FaPause /> : <FaPlay />}
         </button>
-        <h2 className="text-center text-3xl my-6">
+        <h2 className="text-center text-2xl p-2">
           {surah.name} - {surah.englishName}
         </h2>
       </div>
