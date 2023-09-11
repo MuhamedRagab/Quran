@@ -3,7 +3,6 @@ export const dynamic = "force-dynamic";
 
 import { useCallback, Suspense, useEffect, useRef, useState } from "react";
 import { useParams } from "next/navigation";
-import { getSurah } from "@/app/utils/quranDb";
 import Ayah, { AyahEndSymbol } from "./Ayah";
 import Loader from "@/app/components/Loader";
 import { FaPause, FaPlay } from "react-icons/fa";
@@ -69,7 +68,7 @@ export default function Surah() {
   );
 
   const surahPlayPauseHandler = () => {
-    if (audioRef.current.src === "") {
+    if (audioRef.current.src === "" || ayahNumberPlaying === 0) {
       verseAudioURL(parseInt(surahId), 1);
       setIsAudioPlaying(true);
     } else if (audioRef.current?.paused) {
@@ -83,8 +82,17 @@ export default function Surah() {
 
   useEffect(() => {
     (async () => {
-      const surahData = (await getSurah(parseInt(surahId))) as ISurah;
-      setSurah(surahData);
+      try {
+        const { data } = (await (
+          await fetch(
+            `${process.env.NEXT_PUBLIC_QURAN_API}/surah/${parseInt(surahId)}`
+          )
+        ).json()) as { data: ISurah };
+
+        setSurah(data);
+      } catch (error) {
+        console.error(error);
+      }
     })();
     Aos.init({
       duration: 500,
@@ -140,6 +148,7 @@ export default function Surah() {
         ref={audioRef}
         onEnded={() => {
           setAyahNumberPlaying(0);
+          setIsAudioPlaying(false);
         }}
       />
 
