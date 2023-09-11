@@ -1,7 +1,7 @@
 {
-  "name": "Next.js App",
-  "short_name": "Next.js App",
-  "description": "Next.js App",
+  "name": "Quran App",
+  "short_name": "Quran",
+  "description": "Quran App for lestening and reading Quran",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fff",
