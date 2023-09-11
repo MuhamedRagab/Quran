@@ -4,8 +4,8 @@
   "description": "Quran App for lestening and reading Quran",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#222",
+  "theme_color": "#222",
   "icons": [
     {
       "src": "/quran-32.png",
