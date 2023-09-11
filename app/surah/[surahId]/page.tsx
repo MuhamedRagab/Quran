@@ -4,11 +4,12 @@ export const dynamic = "force-dynamic";
 import { useCallback, Suspense, useEffect, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import { getSurah } from "@/app/utils/quranDb";
-import Ayah, { VerseSymbol } from "./Ayah";
+import Ayah, { AyahEndSymbol } from "./Ayah";
 import Loader from "@/app/components/Loader";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { getAudioURLByVerse } from "quran-db";
 import Basmala, { basmalaText } from "./Basmala";
+import Aos from "aos";
 
 type ISurah = {
   ayahs: {
@@ -85,6 +86,10 @@ export default function Surah() {
       const surahData = (await getSurah(parseInt(surahId))) as ISurah;
       setSurah(surahData);
     })();
+    Aos.init({
+      duration: 500,
+      once: true,
+    });
   }, [surahId]);
 
   useEffect(() => {
@@ -143,7 +148,7 @@ export default function Surah() {
         <Basmala key={basmalaText} />
       ) : null}
 
-      <ul className="flex items-baseline gap-x-6 flex-wrap justify-center select-none">
+      <ul className="flex items-baseline gap-x-6 flex-wrap justify-center select-none mt-6">
         {surah.ayahs.slice(0)?.map(({ text, numberInSurah, number }) => (
           <Suspense key={number} fallback={<Loader />}>
             <Ayah
@@ -175,7 +180,7 @@ export default function Surah() {
             });
           }}
         >
-          <VerseSymbol
+          <AyahEndSymbol
             numberInSurah={ayahNumberPlaying}
             baseClassName="bottom-3"
           />

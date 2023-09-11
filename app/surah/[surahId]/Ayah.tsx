@@ -12,7 +12,7 @@ export interface IAyahProps {
   verseAudioURL: (surahNumber: number, ayahNumber: number) => void;
 }
 
-export const VerseSymbol = ({
+export const AyahEndSymbol = ({
   numberInSurah,
   className,
   baseClassName,
@@ -59,6 +59,7 @@ export default function Ayah({
       key={text}
       className="py-2 text-2xl leading-10"
       ref={ayahNumberPlaying === numberInSurah ? ayahRef : null}
+      data-aos="zoom-in"
     >
       <button
         className={twMerge(
@@ -70,7 +71,7 @@ export default function Ayah({
         onClick={() => verseAudioURL(parseInt(surahId), numberInSurah)}
       >
         {text}
-        <VerseSymbol numberInSurah={numberInSurah} />
+        <AyahEndSymbol numberInSurah={numberInSurah} />
       </button>
     </li>
   );
