@@ -1,6 +1,5 @@
 "use client";
-
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useState } from "react";
 import SurahList from "./home/SurahList";
 import surahData from "quran-db/utils/surah_data";
 import SearchSurah from "./home/SearchSurah";
@@ -8,30 +7,17 @@ import { twMerge } from "tailwind-merge";
 import Loader from "./components/Loader";
 
 export interface ISurahListProps {
-  number: number;
+  id: number;
   name: string;
-  englishName: string;
-  englishNameTranslation: string;
-  numberOfAyahs: number;
-  revelationType: string;
+  arabic: string;
+  english: string;
+  aya: number;
+  place: string;
+  turkish: string;
 }
 
 export default function Home() {
-  const [surah, setSurah] = useState<ISurahListProps[] | []>([]);
-
-  useEffect(() => {
-    (async () => {
-      try {
-        await fetch(`${process.env.NEXT_PUBLIC_QURAN_API}/meta`)
-          .then((res) => res.json())
-          .then(({ data }) => {
-            setSurah(data.surahs.references);
-          });
-      } catch (error) {
-        console.error(error);
-      }
-    })();
-  }, []);
+  const [surah, setSurah] = useState<ISurahListProps[]>(surahData);
 
   return (
     <main
