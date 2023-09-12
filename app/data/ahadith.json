@@ -1,0 +1,56 @@
+[
+  {
+    "name": "HR. Abu Daud",
+    "id": "abu-daud",
+    "available": 4419,
+    "arabic": "أبو داود سليمان"
+  },
+  {
+    "name": "HR. Ahmad",
+    "id": "ahmad",
+    "available": 4305,
+    "arabic": "أحمد بن محمد بن حنبل"
+  },
+  {
+    "name": "HR. Bukhari",
+    "id": "bukhari",
+    "available": 6638,
+    "arabic": "محمد بن إسماعيل"
+  },
+  {
+    "name": "HR. Darimi",
+    "id": "darimi",
+    "available": 2949,
+    "arabic": "عبد الرحمن بن عبد الله"
+  },
+  {
+    "name": "HR. Ibnu Majah",
+    "id": "ibnu-majah",
+    "available": 4285,
+    "arabic": "محمد بن يزيد بن ماجه"
+  },
+  {
+    "name": "HR. Malik",
+    "id": "malik",
+    "available": 1587,
+    "arabic": "مالك بن أنس"
+  },
+  {
+    "name": "HR. Muslim",
+    "id": "muslim",
+    "available": 4930,
+    "arabic": "مسلم بن الحجاج"
+  },
+  {
+    "name": "HR. Nasai",
+    "id": "nasai",
+    "available": 5364,
+    "arabic": "أحمد بن شعيب"
+  },
+  {
+    "name": "HR. Tirmidzi",
+    "id": "tirmidzi",
+    "available": 3625,
+    "arabic": "محمد بن عيسى"
+  }
+]
