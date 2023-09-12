@@ -1,18 +1,25 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import logo from "@/app/assets/images/logo.jpg";
+import { usePathname } from "next/navigation";
+import ScrollYProgress from "./ScrollYProgress";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  if (pathname === "/") return null;
+
   return (
-    <div className="navbar bg-base-100 py-4">
+    <nav className="navbar bg-base-100 py-4">
+      <ScrollYProgress />
       <div className="flex-1">
         <Link href={"/"}>
           <Image
             src={logo}
             alt="logo"
-            className="rounded-lg object-contain object-center w-12 h-12 cursor-pointer"
+            className="rounded-lg object-contain object-center w-10 h-10 cursor-pointer"
           />
         </Link>
       </div>
@@ -43,6 +50,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

@@ -1,12 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Amiri_Quran } from "next/font/google";
+import { Amiri } from "next/font/google";
 import Navbar from "./components/layout/Navbar";
-import ScrollYProgress from "./components/layout/ScrollYProgress";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
-export const amiri_quran = Amiri_Quran({
+export const amiri_quran = Amiri({
   subsets: ["latin"],
   weight: "400",
 });
@@ -41,7 +39,6 @@ export default function RootLayout({
   return (
     <html lang="ar" data-theme="dark">
       <body className={amiri_quran.className}>
-        <ScrollYProgress />
         <Navbar />
         {children}
       </body>

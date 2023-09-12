@@ -1,5 +1,5 @@
 import { ISurahListProps } from "../page";
-import surahData from "quran-db/utils/surah_data";
+import surahData from "@/app/data/surahs.json";
 
 export default function SearchSurah({
   setSurah,
@@ -20,9 +20,8 @@ export default function SearchSurah({
   return (
     <input
       type="search"
-      className="input input-bordered w-full max-w-md pb-2"
+      className="input input-bordered w-full max-w-md"
       placeholder="ابحث باسم السورة او رقمها"
-      dir="rtl"
       onChange={searchSurah}
     />
   );

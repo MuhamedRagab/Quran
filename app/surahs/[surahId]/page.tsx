@@ -3,15 +3,18 @@ export const dynamic = "force-dynamic";
 
 import { useCallback, Suspense, useEffect, useRef, useState } from "react";
 import { useParams } from "next/navigation";
-import Ayah, { AyahEndSymbol } from "./Ayah";
 import Loader from "@/app/components/Loader";
 import { FaPause, FaPlay } from "react-icons/fa";
-import { getAudioURLByVerse } from "quran-db";
-import Basmala, { basmalaText } from "./Basmala";
 import Aos from "aos";
+import Ayah, { AyahEndSymbol } from "./components/Ayah";
+import Basmala, { basmalaText } from "./components/Basmala";
+import { twMerge } from "tailwind-merge";
+import Container from "@/app/components/Container";
 
 type ISurah = {
   ayahs: {
+    audio: string;
+    audioSecondary: string[];
     hizbQuarter: number;
     juz: number;
     manzil: number;
@@ -49,11 +52,14 @@ export default function Surah() {
   const [isScrollButtonVisible, setIsScrollButtonVisible] =
     useState<boolean>(false);
 
+  // Play/Pause verse audio
   const verseAudioURL = useCallback(
-    (surahNumber: number, ayahNumber: number) => {
+    (ayahNumber: number) => {
       if (!audioRef || !audioRef.current)
         throw new Error("Audio ref is not defined");
-      audioRef.current.src = getAudioURLByVerse(surahNumber, ayahNumber);
+
+      const audio = surah.ayahs[ayahNumber - 1].audio;
+      audioRef.current.src = audio;
       setAyahNumberPlaying(ayahNumber);
 
       if (audioRef.current.paused) {
@@ -64,12 +70,13 @@ export default function Surah() {
         setIsAudioPlaying(false);
       }
     },
-    []
+    [surah.ayahs]
   );
 
+  // Play/Pause surah audio
   const surahPlayPauseHandler = () => {
     if (audioRef.current.src === "" || ayahNumberPlaying === 0) {
-      verseAudioURL(parseInt(surahId), 1);
+      verseAudioURL(1);
       setIsAudioPlaying(true);
     } else if (audioRef.current?.paused) {
       audioRef.current?.play();
@@ -80,12 +87,15 @@ export default function Surah() {
     }
   };
 
+  // Fetch surah data
   useEffect(() => {
     (async () => {
       try {
         const { data } = (await (
           await fetch(
-            `${process.env.NEXT_PUBLIC_QURAN_API}/surah/${parseInt(surahId)}`
+            `${process.env.NEXT_PUBLIC_QURAN_API}/surah/${parseInt(
+              surahId
+            )}/ar.alafasy`
           )
         ).json()) as { data: ISurah };
 
@@ -94,12 +104,14 @@ export default function Surah() {
         console.error(error);
       }
     })();
+    // Enable AOS
     Aos.init({
       duration: 500,
       once: true,
     });
   }, [surahId]);
 
+  // Detect if the ayah is visible in the viewport
   useEffect(() => {
     if (!ayahRef?.current) return;
     const observer = new IntersectionObserver(
@@ -126,7 +138,9 @@ export default function Surah() {
   if (!surah || Object.keys(surah?.ayahs ?? {}).length === 0) return <Loader />;
 
   return (
-    <div className="container p-4" dir="rtl">
+    <Container isRtl={true}>
+      <h1>أحاديث نبويه</h1>
+
       <div className="p-2">
         <h3>رقم السوره: {surah.number}</h3>
         <h3>عدد الايات: {surah.numberOfAyahs}</h3>
@@ -167,11 +181,12 @@ export default function Surah() {
                 ayahNumberPlaying,
                 text:
                   numberInSurah === 1 && number !== 1 && number !== 1236
-                    ? text.slice(40)
+                    ? text.slice(39)
                     : text,
                 numberInSurah,
                 numberOfAyahs: surah.numberOfAyahs,
-                verseAudioURL,
+                playAudio: (ayahNumber?: number) =>
+                  verseAudioURL(ayahNumber || numberInSurah),
               }}
             />
           </Suspense>
@@ -194,6 +209,6 @@ export default function Surah() {
           />
         </button>
       )}
-    </div>
+    </Container>
   );
 }

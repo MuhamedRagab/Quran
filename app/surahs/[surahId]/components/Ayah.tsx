@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { twMerge } from "tailwind-merge";
+import { Amiri_Quran } from "next/font/google";
 
 export interface IAyahProps {
   text: string;
@@ -9,8 +10,13 @@ export interface IAyahProps {
   surahId: string;
   ayahNumberPlaying: number;
   numberOfAyahs: number;
-  verseAudioURL: (surahNumber: number, ayahNumber: number) => void;
+  playAudio: (numberInSurah?: number) => void;
 }
+
+export const amiri_quran = Amiri_Quran({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const AyahEndSymbol = ({
   numberInSurah,
@@ -42,22 +48,22 @@ export default function Ayah({
   surahId,
   ayahNumberPlaying,
   numberOfAyahs,
-  verseAudioURL,
+  playAudio,
 }: IAyahProps) {
   useEffect(() => {
     if (audioRef && audioRef.current) {
       audioRef.current.onended = () => {
         if (ayahNumberPlaying < numberOfAyahs) {
-          verseAudioURL(parseInt(surahId), ayahNumberPlaying + 1);
+          playAudio(ayahNumberPlaying + 1);
         }
       };
     }
-  }, [audioRef, ayahNumberPlaying, numberOfAyahs, surahId, verseAudioURL]);
+  }, [audioRef, ayahNumberPlaying, numberOfAyahs, playAudio]);
 
   return (
     <li
       key={text}
-      className="py-2 text-2xl leading-10"
+      className={`${amiri_quran.className} py-2 text-2xl`}
       ref={ayahNumberPlaying === numberInSurah ? ayahRef : null}
       data-aos="zoom-in"
     >
@@ -68,10 +74,9 @@ export default function Ayah({
           }`,
           "inline-block"
         )}
-        onClick={() => verseAudioURL(parseInt(surahId), numberInSurah)}
+        onClick={() => playAudio()}
       >
-        {text}
-        <AyahEndSymbol numberInSurah={numberInSurah} />
+        {text} <AyahEndSymbol numberInSurah={numberInSurah} />
       </button>
     </li>
   );

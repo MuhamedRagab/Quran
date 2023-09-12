@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        xs: "320px",
+        xs: "400px",
+        xxl: "1440px",
       },
       container: {
         center: true,
