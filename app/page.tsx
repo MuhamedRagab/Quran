@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 import Card from "./components/ui/Card";
 import Container from "./components/Container";
 
-export const HomeTextLink = ({
+const HomeTextLink = ({
   text,
   href,
   className,
