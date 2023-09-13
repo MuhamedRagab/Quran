@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Amiri } from "next/font/google";
 import Navbar from "./components/layout/Navbar";
 import "aos/dist/aos.css";
+import Provider from "./provider";
 
 export const amiri_quran = Amiri({
   subsets: ["latin"],
@@ -39,8 +40,10 @@ export default function RootLayout({
   return (
     <html lang="ar" data-theme="dark">
       <body className={amiri_quran.className}>
-        <Navbar />
-        {children}
+        <Provider>
+          <Navbar />
+          {children}
+        </Provider>
       </body>
     </html>
   );

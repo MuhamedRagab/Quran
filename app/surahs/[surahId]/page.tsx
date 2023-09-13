@@ -10,6 +10,7 @@ import Ayah, { AyahEndSymbol } from "./components/Ayah";
 import Basmala, { basmalaText } from "./components/Basmala";
 import { twMerge } from "tailwind-merge";
 import Container from "@/app/components/Container";
+import { useSettings } from "@/app/context/settings";
 
 type ISurah = {
   ayahs: {
@@ -43,6 +44,7 @@ type ISurah = {
 };
 
 export default function Surah() {
+  const { settings } = useSettings();
   const { surahId } = useParams() as { surahId: string };
   const [surah, setSurah] = useState<ISurah>({} as ISurah);
   const ayahRef = useRef<HTMLLIElement>(null);
@@ -52,6 +54,11 @@ export default function Surah() {
   const [isScrollButtonVisible, setIsScrollButtonVisible] =
     useState<boolean>(false);
 
+  const setupAudio = useCallback(() => {
+    if (!audioRef || !audioRef.current) return;
+    audioRef.current.playbackRate = settings.audioSpeed.value;
+  }, [settings.audioSpeed.value]);
+
   // Play/Pause verse audio
   const verseAudioURL = useCallback(
     (ayahNumber: number) => {
@@ -60,6 +67,7 @@ export default function Surah() {
 
       const audio = surah.ayahs[ayahNumber - 1].audio;
       audioRef.current.src = audio;
+      setupAudio();
       setAyahNumberPlaying(ayahNumber);
 
       if (audioRef.current.paused) {
@@ -70,7 +78,7 @@ export default function Surah() {
         setIsAudioPlaying(false);
       }
     },
-    [surah.ayahs]
+    [setupAudio, surah.ayahs]
   );
 
   // Play/Pause surah audio
@@ -110,6 +118,11 @@ export default function Surah() {
       once: true,
     });
   }, [surahId]);
+
+  // Setup audio
+  useEffect(() => {
+    setupAudio();
+  }, [setupAudio]);
 
   // Detect if the ayah is visible in the viewport
   useEffect(() => {
@@ -158,8 +171,11 @@ export default function Surah() {
           {surah.name} - {surah.englishName}
         </h2>
       </div>
+
       <audio
         ref={audioRef}
+        preload="metadata"
+        hidden
         onEnded={() => {
           setAyahNumberPlaying(0);
           setIsAudioPlaying(false);
