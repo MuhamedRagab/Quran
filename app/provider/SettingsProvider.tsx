@@ -36,9 +36,16 @@ export default function SettingsProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [settings, updateSettings] = useImmer<Settings>(
-    JSON.parse(localStorage.getItem("settings")) || initSettings
-  );
+  const [settings, updateSettings] = useImmer<Settings>(initSettings);
+
+  useEffect(() => {
+    const localSettings = localStorage.getItem("settings");
+    if (localSettings) {
+      updateSettings((draft) => {
+        Object.assign(draft, JSON.parse(localSettings));
+      });
+    }
+  }, [updateSettings]);
 
   useEffect(() => {
     localStorage.setItem("settings", JSON.stringify(settings));
