@@ -24,7 +24,7 @@ export interface IHadith {
 export default function Hadith() {
   const { hadithId } = useParams() as { hadithId: string };
   const [hadith, setHadith] = useState<IHadith>({} as IHadith);
-  const [count, setCount] = useState<number>(30);
+  const [count, setCount] = useState<number>(20);
   const [loading, setLoading] = useState<boolean>(false);
   const [hadithTarget, setHadithTarget] = useState<
     IHadith["hadiths"][0] | null
@@ -66,7 +66,7 @@ export default function Hadith() {
         <span className="text-xl">{count}</span>
       </div>
 
-      <ul className="columns-xs xxl:columns-lg">
+      <ul className="columns-xs xxl:columns-md">
         {hadith.hadiths?.slice(0, count).map(({ arab, id, number }) => (
           <Card
             key={id}
