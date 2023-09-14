@@ -152,8 +152,6 @@ export default function Surah() {
 
   return (
     <Container isRtl={true}>
-      <h1>أحاديث نبويه</h1>
-
       <div className="p-2">
         <h3>رقم السوره: {surah.number}</h3>
         <h3>عدد الايات: {surah.numberOfAyahs}</h3>
