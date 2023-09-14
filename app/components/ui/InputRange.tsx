@@ -22,7 +22,7 @@ export default function InputRange({
   ...props
 }: Props) {
   return (
-    <>
+    <div>
       {label && (
         <label className="label" dir="rtl">
           <span className="label-text">{label}</span>
@@ -45,6 +45,6 @@ export default function InputRange({
             <span key={i}>{min + i * step}</span>
           ))}
       </div>
-    </>
+    </div>
   );
 }
