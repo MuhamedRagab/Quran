@@ -10,6 +10,8 @@ import Drawer from "../ui/Drawer";
 import InputRange from "../ui/InputRange";
 import { useSettings } from "@/app/context/settings";
 import { FiSettings } from "react-icons/fi";
+import SelectBox from "../ui/SelectBox";
+import { Theme } from "@/app/utils/settings";
 
 export default function Navbar() {
   const { settings, updateSettings } = useSettings();
@@ -38,19 +40,30 @@ export default function Navbar() {
             </div>
           </label>
           <Drawer drawerToggleRef={drawerToggleRef}>
-            <InputRange
-              label="سرعة الصوت"
-              className="range-xs"
-              min={settings.audioSpeed.min}
-              max={settings.audioSpeed.max}
-              value={settings.audioSpeed.value}
-              step={settings.audioSpeed.step}
-              onChange={(e) => {
-                updateSettings((draft) => {
-                  draft.audioSpeed.value = Number(e.target.value);
-                });
-              }}
-            />
+            <div className="flex flex-col gap-4">
+              <SelectBox
+                label="حدد سمة الموقع"
+                options={Object.keys(Theme)}
+                onChange={(e) => {
+                  updateSettings((draft) => {
+                    draft.theme = e.target.value as Theme;
+                  });
+                }}
+              />
+              <InputRange
+                label="سرعة الصوت"
+                className="range-xs"
+                min={settings.audioSpeed.min}
+                max={settings.audioSpeed.max}
+                value={settings.audioSpeed.value}
+                step={settings.audioSpeed.step}
+                onChange={(e) => {
+                  updateSettings((draft) => {
+                    draft.audioSpeed.value = Number(e.target.value);
+                  });
+                }}
+              />
+            </div>
           </Drawer>
           <ul
             className="mt-3 z-10 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"

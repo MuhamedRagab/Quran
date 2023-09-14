@@ -1,30 +1,12 @@
 "use client";
 import React, { createContext, useEffect } from "react";
 import { useImmer } from "use-immer";
-
-interface Settings {
-  audioSpeed: {
-    value: number;
-    min: number;
-    max: number;
-    step: number;
-  };
-  [key: string]: any;
-}
+import { Settings, initSettings } from "../utils/settings";
 
 interface SettingsContext {
   settings: Settings;
   updateSettings: (fn: (draft: Settings) => void) => void;
 }
-
-export const initSettings: Settings = {
-  audioSpeed: {
-    value: 1,
-    min: 0.5,
-    max: 2,
-    step: 0.25,
-  },
-};
 
 export const SettingsContext = createContext<SettingsContext>({
   settings: initSettings,
@@ -49,6 +31,7 @@ export default function SettingsProvider({
 
   useEffect(() => {
     localStorage.setItem("settings", JSON.stringify(settings));
+    document.documentElement.setAttribute("data-theme", settings.theme);
   }, [settings]);
 
   return (

@@ -18,6 +18,9 @@ const config: Config = {
       },
     },
   },
+  daisyui: {
+    themes: ["coffee", "dark", "dracula", "luxury", "forest", "night"],
+  },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
 };
 export default config;
