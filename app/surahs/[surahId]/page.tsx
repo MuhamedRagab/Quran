@@ -6,11 +6,11 @@ import { useParams } from "next/navigation";
 import Loader from "@/app/components/Loader";
 import { FaPause, FaPlay } from "react-icons/fa";
 import Aos from "aos";
-import Ayah, { AyahEndSymbol } from "./components/Ayah";
+import Ayah from "./components/Ayah";
 import Basmala, { basmalaText } from "./components/Basmala";
-import { twMerge } from "tailwind-merge";
 import Container from "@/app/components/Container";
 import { useSettings } from "@/app/context/settings";
+import ButtonScroll from "./components/ButtonScroll";
 
 type ISurah = {
   ayahs: {
@@ -158,7 +158,7 @@ export default function Surah() {
         <h3>نوع الوحي: {surah.revelationType}</h3>
       </div>
 
-      <div className="flex items-baseline justify-center gap-4 sticky top-0 bg-[#1d232a] z-20 p-2 mb-10">
+      <div className="flex items-baseline justify-center gap-4 sticky top-0 rounded-b-3xl bg-[#1d232a] z-20 p-2 mb-10">
         <button
           className="text-xl cursor-pointer"
           onClick={surahPlayPauseHandler}
@@ -191,12 +191,9 @@ export default function Surah() {
               {...{
                 audioRef,
                 ayahRef,
-                surahId,
+                number,
                 ayahNumberPlaying,
-                text:
-                  numberInSurah === 1 && number !== 1 && number !== 1236
-                    ? text.slice(39)
-                    : text,
+                text,
                 numberInSurah,
                 numberOfAyahs: surah.numberOfAyahs,
                 playAudio: (ayahNumber?: number) =>
@@ -207,21 +204,7 @@ export default function Surah() {
         ))}
       </ul>
       {isScrollButtonVisible && (
-        <button
-          className="fixed bottom-10 right-14 z-30 bg-slate-800 hover:bg-slate-700 duration-200 text-white rounded-full p-2"
-          onClick={() => {
-            if (!ayahRef || !ayahRef.current) return;
-            window.scrollTo({
-              top: ayahRef.current.offsetTop - 100,
-              behavior: "smooth",
-            });
-          }}
-        >
-          <AyahEndSymbol
-            numberInSurah={ayahNumberPlaying}
-            baseClassName="bottom-3"
-          />
-        </button>
+        <ButtonScroll {...{ ayahRef, ayahNumberPlaying }} />
       )}
     </Container>
   );

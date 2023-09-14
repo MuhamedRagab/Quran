@@ -7,8 +7,8 @@ export interface IAyahProps {
   numberInSurah: number;
   audioRef: React.MutableRefObject<HTMLAudioElement> | null;
   ayahRef: React.MutableRefObject<HTMLLIElement> | null;
-  surahId: string;
   ayahNumberPlaying: number;
+  number: number;
   numberOfAyahs: number;
   playAudio: (numberInSurah?: number) => void;
 }
@@ -45,9 +45,9 @@ export default function Ayah({
   numberInSurah,
   audioRef,
   ayahRef,
-  surahId,
   ayahNumberPlaying,
   numberOfAyahs,
+  number,
   playAudio,
 }: IAyahProps) {
   useEffect(() => {
@@ -76,7 +76,10 @@ export default function Ayah({
         )}
         onClick={() => playAudio()}
       >
-        {text} <AyahEndSymbol numberInSurah={numberInSurah} />
+        {numberInSurah === 1 && number !== 1 && number !== 1236
+          ? text.slice(39)
+          : text}{" "}
+        <AyahEndSymbol numberInSurah={numberInSurah} />
       </button>
     </li>
   );
