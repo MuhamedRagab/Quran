@@ -16,7 +16,7 @@ export default function HadithModel({ arab, id, number }: Props) {
         <h3 className="font-bold text-lg" dir="ltr">
           {number}
         </h3>
-        <p className="py-4 leading-8">{arab}</p>
+        <p className="py-4 leading-loose text-xl">{arab}</p>
         <p className="font-bold text-lg" dir="ltr">
           {id}
         </p>

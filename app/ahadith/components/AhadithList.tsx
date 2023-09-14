@@ -1,14 +1,11 @@
+"use client";
 import Link from "next/link";
 import Card from "@/app/components/ui/Card";
 import ahadithData from "@/app/data/ahadith.json";
 import { useEffect } from "react";
 import Aos from "aos";
 
-interface Props {
-  ahadith: typeof ahadithData;
-}
-
-export default function AhadithList({ ahadith }: Props) {
+export default function AhadithList() {
   useEffect(() => {
     Aos.init({
       duration: 500,
@@ -19,7 +16,7 @@ export default function AhadithList({ ahadith }: Props) {
 
   return (
     <ul className="flex gap-8 flex-wrap w-full justify-center items-center p-8">
-      {ahadith.map(({ name, id, available, arabic }) => (
+      {ahadithData.map(({ name, id, available, arabic }) => (
         <Card
           data-aos="zoom-in"
           key={id}
@@ -27,7 +24,7 @@ export default function AhadithList({ ahadith }: Props) {
         >
           <Link
             href={`/ahadith/${id}`}
-            className="link link-secondary transition decoration-transparent mb-2 text-xl"
+            className="link link-hover link-info transition mb-2 text-xl"
           >
             {arabic}
           </Link>

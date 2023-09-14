@@ -25,7 +25,7 @@ export default function SurahList({ surah }: { surah: ISurahListProps[] }) {
         >
           <Link
             href={`/surahs/${id}`}
-            className="link link-secondary transition decoration-transparent mb-2 text-xl"
+            className="link link-hover link-info transition mb-2 text-xl"
           >
             {arabic}
           </Link>
