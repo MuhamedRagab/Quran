@@ -9,578 +9,633 @@
 
 <url>
   <loc>https://quran-mr.vercel.app/</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/1</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
+  <loc>https://quran-mr.vercel.app/surahs</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/2</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
+  <loc>https://quran-mr.vercel.app/ahadith</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/3</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/1</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/4</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/2</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/5</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/3</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/6</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/4</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/7</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/5</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/8</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/6</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/9</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/7</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/10</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/8</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/11</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/9</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/12</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/10</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/13</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/11</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/14</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/12</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/15</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/13</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/16</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/14</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/17</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/15</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/18</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/16</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/19</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/17</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/20</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/18</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/21</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/19</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/22</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/20</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/23</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/21</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/24</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/22</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/25</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/23</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/26</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/24</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/27</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/25</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/28</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/26</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/29</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/27</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/30</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/28</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/31</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/29</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/32</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/30</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/33</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/31</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/34</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/32</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/35</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/33</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/36</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/34</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/37</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/35</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/38</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/36</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/39</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/37</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/40</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/38</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/41</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/39</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/42</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/40</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/43</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/41</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/44</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/42</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/45</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/43</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/46</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/44</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/47</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/45</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/48</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/46</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/49</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/47</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/50</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/48</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/51</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/49</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/52</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/50</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/53</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/51</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/54</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/52</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/55</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/53</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/56</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/54</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/57</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/55</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/58</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/56</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/59</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/57</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/60</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/58</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/61</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/59</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/62</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/60</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/63</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/61</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/64</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/62</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/65</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/63</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/66</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/64</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/67</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/65</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/68</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/66</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/69</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/67</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/70</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/68</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/71</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/69</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/72</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/70</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/73</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/71</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/74</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/72</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/75</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/73</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/76</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/74</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/77</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/75</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/78</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/76</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/79</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/77</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/80</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/78</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/81</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/79</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/82</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/80</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/83</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/81</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/84</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/82</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/85</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/83</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/86</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/84</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/87</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/85</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/88</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/86</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/89</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/87</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/90</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/88</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/91</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/89</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/92</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/90</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/93</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/91</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/94</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/92</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/95</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/93</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/96</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/94</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/97</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/95</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/98</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/96</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/99</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/97</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/100</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/98</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/101</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/99</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/102</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/100</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/103</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/101</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/104</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/102</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/105</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/103</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/106</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/104</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/107</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/105</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/108</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/106</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/109</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/107</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/110</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/108</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/111</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/109</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/112</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/110</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/113</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/111</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://quran-mr.vercel.app/surah/114</loc>
-  <lastmod>2023-09-11T07:19:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://quran-mr.vercel.app/surahs/112</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/surahs/113</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/surahs/114</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/abu-daud</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/ahmad</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/bukhari</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/darimi</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/ibnu-majah</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/malik</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/muslim</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/nasai</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://quran-mr.vercel.app/ahadith/tirmidzi</loc>
+  <lastmod>2023-09-15T14:05:16+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
