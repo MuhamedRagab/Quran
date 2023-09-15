@@ -1,17 +1,26 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useRef } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import logo from "@/app/assets/images/logo.jpg";
 import { usePathname } from "next/navigation";
-import ScrollYProgress from "./ScrollYProgress";
-import Drawer from "../ui/Drawer";
-import InputRange from "../ui/InputRange";
 import { useSettings } from "@/app/context/settings";
 import { FiSettings } from "react-icons/fi";
-import SelectBox from "../ui/SelectBox";
 import { Theme } from "@/app/utils/settings";
+import ScrollYProgress from "./ScrollYProgress";
+
+const Loader = dynamic(() => import("../../components/Loader"));
+const SelectBox = dynamic(() => import("../ui/SelectBox"), {
+  loading: () => <Loader />,
+});
+const InputRange = dynamic(() => import("../ui/InputRange"), {
+  loading: () => <Loader />,
+});
+const Drawer = dynamic(() => import("../ui/Drawer"), {
+  loading: () => <Loader />,
+});
 
 export default function Navbar() {
   const { settings, updateSettings } = useSettings();

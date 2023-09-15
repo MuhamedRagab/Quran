@@ -11,21 +11,14 @@ import {
   lazy,
 } from "react";
 import { useParams } from "next/navigation";
-import { basmalaText } from "./components/Basmala";
 import { useSettings } from "@/app/context/settings";
 import { FaPause, FaPlay } from "react-icons/fa";
 import Aos from "aos";
+import Basmala, { basmalaText } from "./components/Basmala";
+import Ayah from "./components/Ayah";
+import Container from "@/app/components/Container";
 
 const Loader = lazy(() => import("@/app/components/Loader"));
-const Ayah = dynamicComponent(() => import("./components/Ayah"), {
-  loading: () => <Loader />,
-});
-const Basmala = dynamicComponent(() => import("./components/Basmala"), {
-  loading: () => <Loader />,
-});
-const Container = dynamicComponent(() => import("@/app/components/Container"), {
-  loading: () => <Loader />,
-});
 const ButtonScroll = dynamicComponent(
   () => import("./components/ButtonScroll"),
   {
