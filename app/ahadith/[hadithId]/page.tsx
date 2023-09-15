@@ -1,12 +1,18 @@
 "use client";
 import Container from "@/app/components/Container";
+import dynamic from "next/dynamic";
 import { useParams } from "next/navigation";
 import { useEffect, useState, useCallback, lazy } from "react";
 
-const Card = lazy(() => import("@/app/components/ui/Card"));
 const Loader = lazy(() => import("@/app/components/Loader"));
-const HadithModel = lazy(
-  () => import("@/app/ahadith/[hadithId]/models/HadithModel")
+
+const Card = dynamic(() => import("@/app/components/ui/Card"), {
+  loading: () => <Loader />,
+});
+const HadithModel = dynamic(
+  () => import("@/app/ahadith/[hadithId]/models/HadithModel"), {
+    loading: () => <Loader />,
+  }
 );
 
 export interface IHadithInfo {

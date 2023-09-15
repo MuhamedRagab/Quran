@@ -69,7 +69,7 @@ export default function Ayah({
     >
       <button
         className={twMerge(
-          `hover:bg-amber-100 hover:text-black cursor-pointer rounded duration-200 pb-4 px-1 ${
+          `hover:bg-amber-100 hover:text-black cursor-pointer rounded duration-200 pb-2 px-1 leading-10 ${
             ayahNumberPlaying === numberInSurah ? "text-black bg-amber-100" : ""
           }`,
           "inline-block"
