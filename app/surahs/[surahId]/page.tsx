@@ -1,16 +1,37 @@
 "use client";
 export const dynamic = "force-dynamic";
 
-import { useCallback, Suspense, useEffect, useRef, useState } from "react";
+import dynamicComponent from "next/dynamic";
+import {
+  useCallback,
+  Suspense,
+  useEffect,
+  useRef,
+  useState,
+  lazy,
+} from "react";
 import { useParams } from "next/navigation";
-import Loader from "@/app/components/Loader";
+import { basmalaText } from "./components/Basmala";
+import { useSettings } from "@/app/context/settings";
 import { FaPause, FaPlay } from "react-icons/fa";
 import Aos from "aos";
-import Ayah from "./components/Ayah";
-import Basmala, { basmalaText } from "./components/Basmala";
-import Container from "@/app/components/Container";
-import { useSettings } from "@/app/context/settings";
-import ButtonScroll from "./components/ButtonScroll";
+
+const Loader = lazy(() => import("@/app/components/Loader"));
+const Ayah = dynamicComponent(() => import("./components/Ayah"), {
+  loading: () => <Loader />,
+});
+const Basmala = dynamicComponent(() => import("./components/Basmala"), {
+  loading: () => <Loader />,
+});
+const Container = dynamicComponent(() => import("@/app/components/Container"), {
+  loading: () => <Loader />,
+});
+const ButtonScroll = dynamicComponent(
+  () => import("./components/ButtonScroll"),
+  {
+    loading: () => <Loader />,
+  }
+);
 
 type ISurah = {
   ayahs: {

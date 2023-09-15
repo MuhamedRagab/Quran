@@ -16,7 +16,7 @@ export default function SelectBox({ options, label, onChange }: Props) {
         </label>
       )}
       <select
-        className="select select-accent w-full max-w-xs"
+        className="select select-accent w-full max-w-xs capitalize"
         onChange={onChange}
       >
         {options.map((opt) => (

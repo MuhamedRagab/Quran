@@ -2,10 +2,12 @@
 import Container from "@/app/components/Container";
 import { useParams } from "next/navigation";
 import { useEffect, useState, useCallback, lazy } from "react";
-import hadithData from "@/app/data/hadith.json";
-import Card from "@/app/components/ui/Card";
-import Loader from "@/app/components/Loader";
-import HadithModel from "@/app/ahadith/[hadithId]/models/HadithModel";
+
+const Card = lazy(() => import("@/app/components/ui/Card"));
+const Loader = lazy(() => import("@/app/components/Loader"));
+const HadithModel = lazy(
+  () => import("@/app/ahadith/[hadithId]/models/HadithModel")
+);
 
 export interface IHadithInfo {
   number: number;
@@ -21,6 +23,8 @@ export interface IHadith {
   hadiths: IHadithInfo[];
 }
 
+const maxHadith = 300;
+
 export default function Hadith() {
   const { hadithId } = useParams() as { hadithId: string };
   const [hadith, setHadith] = useState<IHadith>({} as IHadith);
@@ -31,12 +35,9 @@ export default function Hadith() {
   >(null);
 
   const loadMore = useCallback(async () => {
-    setLoading(true);
-    await new Promise((resolve) => setTimeout(resolve, 500));
-    setLoading(false);
-    if (count >= hadith.requested) return;
+    if (count >= maxHadith) return;
     setCount((prevCount) => prevCount + 10);
-  }, [count, hadith.requested]);
+  }, [count]);
 
   const showHadithModal = useCallback((hadithInfo: IHadithInfo) => {
     const dialog = document.getElementById("hadith_model") as HTMLDialogElement;
@@ -45,11 +46,21 @@ export default function Hadith() {
   }, []);
 
   useEffect(() => {
-    const hadith: IHadith = (hadithData as IHadith[]).find(
-      (hadith: IHadith) => hadith.id === hadithId
-    );
-    if (hadith) setHadith(hadith);
-  }, [hadithId]);
+    if (!hadithId || count >= maxHadith) return;
+    setLoading(true);
+    fetch(`${process.env.NEXT_PUBLIC_AHADith_API}/${hadithId}?range=1-${count}`)
+      .then((res) => res.json())
+      .then(({ data }) => {
+        setHadith(data);
+      })
+      .catch((err) => {
+        console.error(err);
+        setHadith({ hadiths: [] } as IHadith);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [count, hadithId]);
 
   if (!hadith.hadiths?.length) return <Loader />;
 
@@ -61,19 +72,19 @@ export default function Hadith() {
       <h1 className="capitalize tracking-widest">{hadith.name}</h1>
 
       <div>
-        <span className="text-xl font-bold">{hadith.requested}</span>
+        <span className="text-xl font-bold">{maxHadith}</span>
         <span className="text-xl"> / </span>
         <span className="text-xl">{count}</span>
       </div>
 
       <ul className="columns-xs xxl:columns-md">
-        {hadith.hadiths?.slice(0, count).map(({ arab, id, number }) => (
+        {hadith.hadiths?.map(({ arab, id, number }, i) => (
           <Card
             key={id}
             className="m-4 overflow-auto cursor-pointer select-none"
             onClick={() => showHadithModal({ arab, id, number })}
           >
-            <span className="text-xl font-bold">{number}</span>
+            <span className="text-xl font-bold">{i + 1}</span>
             <p className="text-lg leading-8">{arab}</p>
           </Card>
         ))}
@@ -81,7 +92,7 @@ export default function Hadith() {
 
       <HadithModel {...hadithTarget} />
 
-      {count < hadith.requested && (
+      {count < maxHadith && (
         <button className="btn btn-accent" onClick={loadMore}>
           {loading ? <span className="loading"></span> : "تحميل المزيد"}
         </button>

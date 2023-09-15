@@ -1,11 +1,19 @@
 "use client";
-import { Suspense, useState } from "react";
-import surahData from "@/app/data/surahs.json";
+import { Suspense, useState, lazy } from "react";
+import dynamic from "next/dynamic";
 import { twMerge } from "tailwind-merge";
-import Loader from "../components/Loader";
-import SearchSurah from "./components/SearchSurah";
-import SurahList from "./components/SurahList";
-import Container from "../components/Container";
+import surahData from "@/app/data/surahs.json";
+
+const Loader = lazy(() => import("../components/Loader"));
+const SurahList = dynamic(() => import("./components/SurahList"), {
+  loading: () => <Loader />,
+});
+const Container = dynamic(() => import("../components/Container"), {
+  loading: () => <Loader />,
+});
+const SearchSurah = dynamic(() => import("./components/SearchSurah"), {
+  loading: () => <Loader />,
+});
 
 export interface ISurahListProps {
   id: number;
