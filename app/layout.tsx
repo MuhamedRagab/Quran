@@ -39,6 +39,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" data-theme="dark">
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-5796991193846888" />
+      </head>
       <body className={amiri_quran.className}>
         <Provider>
           <Navbar />
