@@ -23,7 +23,7 @@ export const initSettings: Settings = {
   audioSpeed: {
     value: 1,
     min: 0.5,
-    max: 2,
+    max: 1,
     step: 0.25,
   },
 };
